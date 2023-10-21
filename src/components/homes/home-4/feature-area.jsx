@@ -1,5 +1,6 @@
 import React from 'react';
 import { FeatureOne, FeatureThree, FeatureTwo } from '../../../svg';
+import Image from 'next/image';
 
 const feature_contents = {
   feature_img:'/assets/img/feature/fea-1.png',
@@ -17,13 +18,13 @@ const feature_contents = {
       id:2,
       icon:<FeatureTwo/>,
       title:'Dedicated team',
-      subtitle:<>Committed team ensuring your brand's success through  <br/> creativity and innovation – that's HUE's promise."</>,
+      subtitle:<>Committed team ensuring your brands success through  <br/> creativity and innovation – thats HUEs promise.</>,
     },
     {
       id:3,
       icon:<FeatureThree/>,
       title:'24/7 hours support',
-      subtitle:<>At HUE, our support team is available 24/7, <br/> ensuring your peace of mind around the clock. Reach out anytime!"</>,
+      subtitle:<>At HUE, our support team is available 24/7, <br/> ensuring your peace of mind around the clock. Reach out anytime!</>,
     },
   ]
 }
@@ -34,13 +35,13 @@ const FeatureArea = () => {
   return (
     <div className="tp-feature-arae pt-130 pb-100 p-relative">
       <div className="ce-chose-shape d-none d-lg-block">
-        <img src="/assets/img/hero/hero-shape-4.png" alt=""/>
+        <Image width={80} height={80}  src="/assets/img/hero/hero-shape-4.png" alt=""/>
       </div>
       <div className="container">
         <div className="row">
           <div className="col-xl-6 col-lg-6 wow tpfadeLeft" data-wow-duration=".5s" data-wow-delay=".5s">
             <div className="tp-fea-img">
-              <img src={feature_img} alt=""/>
+              <Image width={80} height={80} layout='responsive' src={feature_img} alt=""/>
             </div>
           </div>
           <div className="col-xl-6 col-lg-6  wow tpfadeRight" data-wow-duration=".5s" data-wow-delay=".7s">

@@ -8,8 +8,8 @@ const CaseImageArea = ({case_item,workDetails}) => {
         <div className="row  ">
         
           {
-            workDetails?.workImages?.map((imgItem)=>(
-                <div className="col-6">
+            workDetails?.workImages?.map((imgItem,index)=>(
+                <div key={index} className="col-6">
               <div className="cd-banner-img">
               <img className='w-60 mt-3 ' src={urlFor(imgItem)} alt="" />
             </div>
