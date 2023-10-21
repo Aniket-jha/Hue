@@ -9,24 +9,24 @@ import IntroduceTwo from './introduce-2';
 import IntroduceArea from './introduce-area';
 import ProjectInfoArea from './project-info-area';
 
-const PortfolioDetails = ({case_item}) => {
+const PortfolioDetails = ({case_item,workDetails}) => {
 
   useEffect(() => {
     setTimeout(() => {
       animationCreate();
     }, 500);
   }, []);
-
+  console.log(workDetails)
   return (
     <Wrapper>
       <HeaderSix />
-      <Breadcrumb title={case_item?.title?case_item?.title:'Case Details'} />
-      <CaseImageArea case_item={case_item}/>
-      <ProjectInfoArea item={case_item} />
+      <Breadcrumb workDetails={workDetails} title={workDetails?.workTitle && workDetails?.workTitle} />
+      <CaseImageArea workDetails={workDetails} case_item={case_item}/>
+      {/* <ProjectInfoArea item={case_item} />
       <IntroduceArea/>
       <CaseImageAreaTwo/>
       <IntroduceTwo/>
-      <Cta/>
+      <Cta/> */}
       <FooterThree />
     </Wrapper>
   );

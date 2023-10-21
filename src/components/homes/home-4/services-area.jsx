@@ -43,16 +43,7 @@ const ServicesArea = () => {
             </div>
           })}
 
-          <div className="col-xl-3 col-lg-4 col-md-6  wow tpfadeUp" data-wow-duration="1.1s" data-wow-delay="1.3s">
-            <div className="sv-color-eight  mb-30">
-              <div className="sv-color-eight__title text-center">
-                <h3 className="tp-sv-sm-title"><a href="#">More Services</a></h3>
-                <Link href={`/service-1`}>
-                  <a><i className="fal fa-long-arrow-up"></i></a>
-                </Link>
-              </div>
-            </div>
-          </div>
+        
         </div>
       </div>
     </div>

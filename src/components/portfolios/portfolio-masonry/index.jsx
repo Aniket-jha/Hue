@@ -4,7 +4,7 @@ import { animationCreate } from '../../../utils/utils';
 import Breadcrumb from '../../common/breadcrumb/breadcrumb';
 import MasonryItems from './masonry-items';
 
-const PortfolioMasonry = () => {
+const PortfolioMasonry = ({work}) => {
 
   useEffect(() => {
     setTimeout(() => {
@@ -16,7 +16,7 @@ const PortfolioMasonry = () => {
     <Wrapper>
       <HeaderSix />
       <Breadcrumb title={'Portfolio Masonry'} />
-      <MasonryItems/>
+      <MasonryItems work={work} />
       <FooterThree />
     </Wrapper>
   );

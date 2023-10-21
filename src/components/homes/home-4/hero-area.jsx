@@ -6,15 +6,14 @@ import VideoModal from '../../common/modals/modal-video';
 
 const hero_contents = {
   shapes: [{ img: 'hero-shape-4' }, { num: '-two', img: 'hero-shape-4.1' }],
-  title: <>Building Digital <span className="tp-highlight"> <HighlightTwo /> <i>Product,</i></span> Brand and Experience</>,
-  text: 'At collax we specialize in designing, building, shipping and scaling beautiful, usable products with blazing-fast efficiency',
+  title: <>Turning everyday concepts  <span className="tp-highlight"> <HighlightTwo /> <i>into creative </i></span> works of art.</>,
+  text: "Whether its revamping your brands identity or infusing some pizzazz into your website, were your go-to team. Let's collaborate and bring your boldest ideas to life because, at our agency, we believe in designing dreams that dance to their own beat!",
   btn_text: 'How it Works',
   video_title: 'Behind the scenes',
   video_id: 'LJbkLdtEW00',
   social_links: [
-    { id: 1, icon: 'fab fa-facebook-f social-icon-1', title: 'Facebook',link: 'http://facebook.com' },
-    { id: 3, icon: 'fab fa-youtube social-icon-3', title: 'Youtube',link: 'https://www.youtube.com/' },
-    { id: 2, icon: 'fab fa-twitter social-icon-2', title: 'Twitter',link: 'http://twitter.com' },
+    { id: 1, icon: 'fab fa-Instagram-f social-icon-1', title: 'Instagram',link: 'http://facebook.com' },
+   
   ],
   hero_img: '/assets/img/hero/hero-5.png'
 }
@@ -42,10 +41,7 @@ const HeroArea = () => {
                   <Link href="/about">
                     <a className="tp-btn mr-55">{btn_text}</a>
                   </Link>
-                  <div className="tp-hero-paly-button-four">
-                    <button onClick={() => setIsVideoOpen(true)} className="popup-video">
-                      <i className="far fa-play"></i> <span>{video_title}</span></button>
-                  </div>
+                 
                 </div>
               </div>
               <div className="tp-hero-social pb-90 wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".9s">

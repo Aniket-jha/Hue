@@ -4,26 +4,26 @@ import { FeatureOne, FeatureThree, FeatureTwo } from '../../../svg';
 const feature_contents = {
   feature_img:'/assets/img/feature/fea-1.png',
   subtitle:'Why Choose us',
-  title:'Specialist in aviding clients of financial',
-  highlight_text:'challenges',
+  title:'Your Creative and Social Media Partner ',
+  highlight_text:'of Choice!',
   feature_lists:[
     {
       id:1,
       icon:<FeatureOne/>,
       title:'Fast working process',
-      subtitle:<>At collax we specialize in designing, building, <br/> shipping and scaling beautiful.</>,
+      subtitle:<>Swift Solutions, Stunning Results. <br/> Experience the Speed of HUE! </>,
     },
     {
       id:2,
       icon:<FeatureTwo/>,
       title:'Dedicated team',
-      subtitle:<>At collax we specialize in designing, building, <br/> shipping and scaling beautiful.</>,
+      subtitle:<>Committed team ensuring your brand's success through  <br/> creativity and innovation – that's HUE's promise."</>,
     },
     {
       id:3,
       icon:<FeatureThree/>,
       title:'24/7 hours support',
-      subtitle:<>At collax we specialize in designing, building, <br/> shipping and scaling beautiful.</>,
+      subtitle:<>At HUE, our support team is available 24/7, <br/> ensuring your peace of mind around the clock. Reach out anytime!"</>,
     },
   ]
 }

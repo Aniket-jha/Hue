@@ -1,6 +1,7 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
+import { urlFor } from '../../../lib/client';
 
 const brand_images = [
   '/assets/img/brand/brand-1.png',
@@ -12,9 +13,10 @@ const brand_images = [
   '/assets/img/brand/brand-6.png',
 ]
 
-const Index = () => {
+const Index = ({homeContent}) => {
   const [sliderLoop, setSliderLoop] = React.useState(false);
   React.useEffect(() => setSliderLoop(true), [])
+  console.log(homeContent)
   return (
     <Swiper
       loop={sliderLoop}
@@ -28,26 +30,26 @@ const Index = () => {
       breakpoints={{
         // when window width is >= 1200px
         1200: {
-          slidesPerView: 6,
+          slidesPerView: 5,
         },
         // when window width is >= 992px
         992: {
-          slidesPerView: 5,
+          slidesPerView: 4,
         },
         // when window width is >= 768px
         768: {
-          slidesPerView: 4,
+          slidesPerView: 3,
         },
         // when window width is >= 576px
         576: {
-          slidesPerView: 3,
+          slidesPerView: 1,
         }
       }}
     >
-      {brand_images.map((brand, i) => (
+      {homeContent && homeContent?.brandList?.map((brand, i) => (
         <SwiperSlide key={i}>
           <div className="tp-brand-icon text-center">
-            <img src={brand} alt="" />
+            <img style={{width:"150px"}} src={urlFor(brand)} alt="" />
           </div>
         </SwiperSlide>
       ))}

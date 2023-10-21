@@ -3,7 +3,7 @@ import React from 'react';
 import useSticky from '../../hooks/use-sticky';
 import MobileMenu from './mobile-menu';
 import NavMenus from './nav-menus';
-
+import Image from 'next/image';
 const HeaderFour = () => {
   const { headerSticky } = useSticky();
   return (
@@ -15,7 +15,7 @@ const HeaderFour = () => {
               <div className="col-xxl-3 col-xl-3 col-lg-3">
                 <div className="tp-logo text-start">
                   <Link href="/">
-                    <a><img src="/assets/img/logo/logo-blue.png" alt="" /></a>
+                    <a><img style={{width:"90px"}} src="/assets/img/logo/logomain.png" alt="" /></a>
                   </Link>
                 </div>
               </div>
@@ -28,27 +28,14 @@ const HeaderFour = () => {
                   </nav>
                 </div>
               </div>
-              <div className="col-xxl-4 col-xl-3 col-lg-3">
-                <div className="tp-header-left d-flex align-items-center justify-content-end">
-                  <div className="tp-header-login login-color-black d-none d-xxl-block ">
-                    <Link href="/login">
-                      <a> <i className="fal fa-user"></i> Login</a>
-                    </Link>
-                  </div>
-                  <div className="tp-header-yellow-button tp-yellow-space">
-                    <Link href="/contact">
-                      <a className="tp-btn-black">Let’s Talk 👋</a>
-                    </Link>
-                  </div>
-                </div>
-              </div>
+             
             </div>
           </div>
         </div>
       </header>
 
       {/* <!-- mobile-menu-area --> */}
-      <MobileMenu logo={"logo-blue.png"} />
+      <MobileMenu logo={"logomain.png"} />
       {/* <!-- mobile-menu-area-end --> */}
     </React.Fragment>
   );

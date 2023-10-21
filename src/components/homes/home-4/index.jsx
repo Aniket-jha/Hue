@@ -10,7 +10,7 @@ import ProjectArea from './project-area';
 import ServicesArea from './services-area';
 import TestimonialArea from './testimonial-area';
 
-const HomeFour = () => {
+const HomeFour = ({homeContent}) => {
   useEffect(() => {
     setTimeout(() => {
       animationCreate();
@@ -21,16 +21,18 @@ const HomeFour = () => {
     <Wrapper>
       <HeaderFour />
       <HeroArea/>
-      <BrandArea/>
+      <BrandArea homeContent={homeContent} />
       <ServicesArea/>
       <FeatureArea/>
-      <ProjectArea/>
-      <TestimonialArea/>
+      {/* <ProjectArea/> */}
+      {/* <TestimonialArea/>
       <NewsLetter/>
-      <BlogArea/>
+      <BlogArea/> */}
       <FooterThree home_four={true} />
     </Wrapper>
   );
 };
+
+
 
 export default HomeFour;

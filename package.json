@@ -11,6 +11,9 @@
   "dependencies": {
     "@popperjs/core": "^2.11.6",
     "@reduxjs/toolkit": "^1.8.5",
+    "@sanity/client": "^6.4.12",
+    "@sanity/image-url": "^1.0.2",
+    "axios": "^1.5.1",
     "bootstrap": "^5.2.1",
     "firebase": "^9.10.0",
     "formik": "^2.2.9",

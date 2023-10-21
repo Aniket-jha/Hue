@@ -1,7 +1,7 @@
 import React from 'react';
 import Brands from '../../common/brands';
 
-const BrandArea = () => {
+const BrandArea = ({homeContent}) => {
   return (
     <div className="tp-brand-area pt-130 pb-130 grey-bg">
       <div className="container">
@@ -14,7 +14,7 @@ const BrandArea = () => {
         </div>
         <div className="tp-brand-slider-section">
           <div className="swiper-container brand-slider-active">
-            <Brands />
+            <Brands homeContent={homeContent} />
           </div>
         </div>
       </div>
