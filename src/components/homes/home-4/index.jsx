@@ -20,10 +20,10 @@ const HomeFour = ({homeContent}) => {
   return (
     <Wrapper>
       <HeaderFour />
-      <HeroArea/>
+      <HeroArea homeContent={homeContent}  />
       <BrandArea homeContent={homeContent} />
       <ServicesArea/>
-      <FeatureArea/>
+      <FeatureArea homeContent={homeContent} />
       {/* <ProjectArea/> */}
       {/* <TestimonialArea/>
       <NewsLetter/>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { FeatureOne, FeatureThree, FeatureTwo } from '../../../svg';
 import Image from 'next/image';
+import { urlFor } from '../../../lib/client';
 
 const feature_contents = {
   feature_img:'/assets/img/feature/fea-1.png',
@@ -31,7 +32,8 @@ const feature_contents = {
 
 const {feature_img,feature_lists,highlight_text,subtitle,title} = feature_contents;
 
-const FeatureArea = () => {
+const FeatureArea = ({homeContent}) => {
+  console.log(homeContent,"feature")
   return (
     <div className="tp-feature-arae pt-130 pb-100 p-relative">
       <div className="ce-chose-shape d-none d-lg-block">
@@ -41,7 +43,7 @@ const FeatureArea = () => {
         <div className="row">
           <div className="col-xl-6 col-lg-6 wow tpfadeLeft" data-wow-duration=".5s" data-wow-delay=".5s">
             <div className="tp-fea-img">
-              <Image width={80} height={80} layout='responsive' src={feature_img} alt=""/>
+          {homeContent?.homeAboutImage  &&  <img src={urlFor(homeContent?.homeAboutImage)} alt=""/>}
             </div>
           </div>
           <div className="col-xl-6 col-lg-6  wow tpfadeRight" data-wow-duration=".5s" data-wow-delay=".7s">

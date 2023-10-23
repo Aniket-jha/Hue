@@ -3,6 +3,7 @@ import React from 'react';
 import useModal from '../../../hooks/use-modal';
 import { HighlightTwo } from '../../../svg';
 import VideoModal from '../../common/modals/modal-video';
+import { urlFor } from '../../../lib/client';
 
 const hero_contents = {
   shapes: [{ img: 'hero-shape-4' }, { num: '-two', img: 'hero-shape-4.1' }],
@@ -20,7 +21,7 @@ const hero_contents = {
 
 const { btn_text, hero_img, shapes, social_links, text, title, video_id, video_title } = hero_contents;
 
-const HeroArea = () => {
+const HeroArea = ({homeContent}) => {
   const { isVideoOpen, setIsVideoOpen } = useModal();
   return (
     <React.Fragment>
@@ -56,7 +57,7 @@ const HeroArea = () => {
             </div>
             <div className="col-xl-6 col-lg-6 wow fadeInRight" data-wow-duration=".7s" data-wow-delay=".9s">
               <div className="tp-hero-right-img-four pt-90">
-                <img src={hero_img} alt="" />
+           { homeContent?.homeBannerImage &&     <img src={urlFor(homeContent?.homeBannerImage)} alt="" />}
               </div>
             </div>
           </div>
