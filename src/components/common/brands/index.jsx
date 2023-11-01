@@ -30,15 +30,15 @@ const Index = ({homeContent}) => {
       breakpoints={{
         // when window width is >= 1200px
         1200: {
-          slidesPerView: 5,
+          slidesPerView: 3.7,
         },
         // when window width is >= 992px
         992: {
-          slidesPerView: 4,
+          slidesPerView: 2.7,
         },
         // when window width is >= 768px
         768: {
-          slidesPerView: 3,
+          slidesPerView: 2.5,
         },
         // when window width is >= 576px
         576: {
@@ -49,7 +49,7 @@ const Index = ({homeContent}) => {
       {homeContent && homeContent?.brandList?.map((brand, i) => (
         <SwiperSlide key={i}>
           <div className="tp-brand-icon text-center">
-            <img style={{width:"150px"}} src={urlFor(brand)} alt="" />
+            <img style={{width:"230px"}} src={urlFor(brand)} alt="" />
           </div>
         </SwiperSlide>
       ))}

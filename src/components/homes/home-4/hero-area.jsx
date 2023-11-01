@@ -7,14 +7,14 @@ import { urlFor } from '../../../lib/client';
 
 const hero_contents = {
   shapes: [{ img: 'hero-shape-4' }, { num: '-two', img: 'hero-shape-4.1' }],
-  title: <>Turning everyday concepts  <span className="tp-highlight"> <HighlightTwo /> <i>into creative </i></span> works of art.</>,
+  title: <>Turning everyday concepts  <span className="tp-highlight"> <HighlightTwo /> <i>into creative </i></span> art.</>,
   text: "Whether its revamping your brands identity or infusing some pizzazz into your website, were your go-to team. Let's collaborate and bring your boldest ideas to life because, at our agency, we believe in designing dreams that dance to their own beat!",
   btn_text: 'How it Works',
   video_title: 'Behind the scenes',
   video_id: 'LJbkLdtEW00',
   social_links: [
-    { id: 1, icon: 'fab fa-Instagram-f social-icon-1', title: 'Instagram',link: 'http://facebook.com' },
-   
+    { id: 1, icon: 'fab fa-Instagram-f social-icon-1', title: 'Instagram',link: 'https://instagram.com/huedesigningideas?igshid=NGVhN2U2NjQ0Yg==' },
+   { id: 1, icon: 'fab fa-Instagram-f social-icon-1', title: 'LinkedIn',link: 'http://facebook.com' },
   ],
   hero_img: '/assets/img/hero/hero-5.png'
 }
@@ -39,7 +39,7 @@ const HeroArea = ({homeContent}) => {
                 </h3>
                 <p className="wow tpfadeUp" data-wow-duration=".5s" data-wow-delay=".7s">{text}</p>
                 <div className="tp-hero-three-button-box d-flex align-items-center wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".9s">
-                  <Link href="/about">
+                  <Link href="/work">
                     <a className="tp-btn mr-55">{btn_text}</a>
                   </Link>
                  

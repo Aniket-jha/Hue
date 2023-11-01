@@ -9,11 +9,11 @@ const ServicesArea = () => {
   return (
     <div className="tp-service-area pb-90 grey-bg">
       <div className="container">
-        <div className="row justify-content-center">
+        <div className="row justify-content-center  ">
           <div className="col-xl-7 col-lg-10">
             <div className="tp-service-section-box text-center pb-60">
               <h5 className="tp-subtitle pb-10">Our Services</h5>
-              <h2 className="tp-title-sm">Managing you business with our
+              <h2 className="tp-title-sm capitalize ">Managing you business with our
                 <span className="tp-section-highlight">
                   best service
                   <HighlightTwo />
@@ -25,14 +25,14 @@ const ServicesArea = () => {
         <div className="row">
           {services_items.map((service, i) => {
             const { delay, duration, id, img, title, border_effect } = service;
-            return <div key={id} className="col-xl-3 col-lg-4 col-md-6 wow tpfadeUp" data-wow-duration={duration} data-wow-delay={delay}>
+            return <div key={id} className="col-xl-3 col-lg-4  col-md-6 wow tpfadeUp" data-wow-duration={duration} data-wow-delay={delay}>
               <div className={`tp-sv-border-effect ${border_effect}`}>
                 <div className={`tp-service-item-four sv-color-${i + 1} mb-30`}>
                   <div className="tp-service-item-four__img  mb-40">
                     <img src={img} alt="" />
                   </div>
                   <div className="tp-service-item-four__title">
-                    <h3 className="tp-sv-sm-title">
+                    <h3 className="tp-sv-sm-title text-center ">
                       <Link href={`/service-details/${id}`}>
                         <a>{title}</a>
                       </Link>
