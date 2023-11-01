@@ -15,7 +15,7 @@ const HeaderFour = () => {
               <div className="col-xxl-3 col-xl-3 col-lg-3">
                 <div className="tp-logo text-start">
                   <Link href="/">
-                    <a><img style={{width:"90px"}} src="/assets/img/logo/logomain.png" alt="" /></a>
+                    <a><img style={{width:"100px"}} src="/assets/img/logo/logomain.png" alt="" /></a>
                   </Link>
                 </div>
               </div>

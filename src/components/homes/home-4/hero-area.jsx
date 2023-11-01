@@ -8,13 +8,13 @@ import { urlFor } from '../../../lib/client';
 const hero_contents = {
   shapes: [{ img: 'hero-shape-4' }, { num: '-two', img: 'hero-shape-4.1' }],
   title: <>Turning everyday concepts  <span className="tp-highlight"> <HighlightTwo /> <i>into creative </i></span> art.</>,
-  text: "Whether its revamping your brands identity or infusing some pizzazz into your website, were your go-to team. Let's collaborate and bring your boldest ideas to life because, at our agency, we believe in designing dreams that dance to their own beat!",
-  btn_text: 'How it Works',
+  text: "Whether you're looking to refresh your brand's image or add some excitement to your website, we are your go-to team. Let's collaborate and bring your boldest ideas to life because, at our agency, we believe in designing dreams that dance to their own beat!",
+  btn_text: 'Check Our Work',
   video_title: 'Behind the scenes',
   video_id: 'LJbkLdtEW00',
   social_links: [
     { id: 1, icon: 'fab fa-Instagram-f social-icon-1', title: 'Instagram',link: 'https://instagram.com/huedesigningideas?igshid=NGVhN2U2NjQ0Yg==' },
-   { id: 1, icon: 'fab fa-Instagram-f social-icon-1', title: 'LinkedIn',link: 'http://facebook.com' },
+   { id: 1, icon: 'fab fa-Instagram-f social-icon-1', title: 'LinkedIn',link: 'https://www.linkedin.com/company/101060414/admin/feed/posts/?shareMsgArgs=null' },
   ],
   hero_img: '/assets/img/hero/hero-5.png'
 }

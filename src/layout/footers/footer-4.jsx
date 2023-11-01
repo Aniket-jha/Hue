@@ -45,9 +45,7 @@ const FooterFour = () => {
                     <a><img src={logo} alt="" /></a>
                   </Link>
                 </div>
-                <div className="tp-footer-widget__text mb-30">
-                  <p>{widget_desc}</p>
-                </div>
+                
                 <div className="tp-footer-widget__social-link tp-footer-widget__social-link-2 ">
                   <SocialLinks />
                 </div>

@@ -8,7 +8,7 @@ const BrandArea = ({homeContent}) => {
         <div className="row">
           <div className="col-12">
             <div className="tp-brand-title-four text-center pb-60">
-              <h4 className="tp-brand-title">Our Clientele</h4>
+              <h4 style={{fontSize:"2.5rem"}} className="tp-brand-title">Our Clientele</h4>
             </div>
           </div>
         </div>
