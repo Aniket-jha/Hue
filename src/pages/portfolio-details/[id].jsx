@@ -28,7 +28,12 @@ export const getServerSideProps = async ({params}) =>{
     workTitle, 
     
     workType,
-    workCover
+    workCover,
+    workVideos[]{
+      asset->{
+        url
+      }
+    }
     
   }`;
   const workDetailList  = await client.fetch(workDetailsQuery);
