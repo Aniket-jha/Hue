@@ -11,8 +11,8 @@ const Breadcrumb = ({ title, back_home= false }) => {
       <div className="container">
         <div className="row">
           <div className="col-xxl-12">
-            <div style={{display:"flex",alignItems:"center",justifyContent:"center",flexDirection:"column"}}  className="breadcrumb__content p-relative z-index-1">
-              <h3 style={{fontSize:"7rem"}} className="breadcrumb__title">{title}</h3>
+            <div style={{display:"flex",alignItems:"center",justifyContent:"center",flexDirection:"column",textAlign:"center"}}  className="breadcrumb__content p-relative z-index-1">
+              <h3  className="breadcrumb__title  ">{title}</h3>
               {!back_home &&<Link  href="/contact">
                 <a  className="tp-btn-white-border">Lets work together <i className="far fa-arrow-right"></i></a>
               </Link>}

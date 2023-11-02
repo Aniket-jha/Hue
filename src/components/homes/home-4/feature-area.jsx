@@ -24,8 +24,8 @@ const feature_contents = {
     {
       id:3,
       icon:<FeatureThree/>,
-      title:'24/7 hours support',
-      subtitle:<>At HUE, our support team is available 24/7, <br/> ensuring your peace of mind around the clock. Reach out anytime!</>,
+      title:'Personalized Support',
+      subtitle:<>At HUE, our support team is available , <br/> ensuring your peace of mind around the clock. Reach out anytime!</>,
     },
   ]
 }

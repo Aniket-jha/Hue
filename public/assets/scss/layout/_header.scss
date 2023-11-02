@@ -70,7 +70,7 @@
 
             &:hover {
                 & a {
-                    color: var(--tp-common-black);
+                
 
                     &::after {
                         visibility: visible;
@@ -127,14 +127,14 @@
                         }
 
                         &:hover {
-                            color: var(--tp-theme-primary);
+                            
                         }
                     }
                 }
             }
             &:hover{
                 &::after{
-                    color: var(--tp-common-black);
+                  
                     transform: rotate(-180deg);
                 }
             }
@@ -146,11 +146,11 @@
     padding-bottom: 35px;
     & .hasdropdown{
         &::after{
-            color: var(--tp-common-white);
+          
         }
         &:hover{
             &::after{
-                color: var(--tp-theme-primary);
+               
             }
         }
     }
@@ -275,8 +275,7 @@
         z-index: 2;
 
         &:hover {
-            background-color: var(--tp-theme-primary);
-            color: var(--tp-common-black);
+            
         }
     }
 }
@@ -420,7 +419,7 @@
 
             &:hover {
                 & a {
-                    color: var(--tp-theme-primary);
+                  
                 }
 
                 & ul.submenu {
@@ -465,7 +464,7 @@
         color: var(--tp-common-black);
         transition: .3s;
         &:hover{
-            color: var(--tp-theme-1);
+     
         }
     }
 }
@@ -517,14 +516,14 @@
     font-weight: 500;
 
     &:hover {
-        color: var(--tp-theme-primary);
+        
     }
 }
 .tp-login-primary {
     & a{
     color: var(--tp-common-white);
     &:hover {
-        color: var(--tp-theme-primary);
+        
     }
     }
 }
@@ -549,7 +548,7 @@
 
             &:hover {
                 & a {
-                    color: var(--tp-common-black);
+                
                 }
             }
         }
@@ -563,7 +562,7 @@
         color: #8A90A2;
 
         &:hover {
-            color: var(--tp-common-black);
+           
         }
     }
 }
@@ -649,10 +648,10 @@
 
             &:hover> {
                 & a {
-                    color: var(--tp-theme-1);
+                   
 
                     & i {
-                        color: var(--tp-theme-1);
+                       
                     }
                 }
 
@@ -685,7 +684,7 @@
 
                     &:hover {
                         & a {
-                            color: var(--tp-theme-primary);
+                          
                         }
                     }
                 }
@@ -816,7 +815,7 @@
                     }
                 }
                 &:hover{
-                    color: var(--tp-theme-primary);
+               
                 }
             }
         }
