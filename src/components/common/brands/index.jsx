@@ -38,7 +38,7 @@ const Index = ({homeContent}) => {
         },
         // when window width is >= 768px
         768: {
-          slidesPerView: 2.5,
+          slidesPerView: 1.8,
         },
         // when window width is >= 576px
         576: {
