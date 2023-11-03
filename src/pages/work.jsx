@@ -6,7 +6,7 @@ export default function index({work}) {
   
   return (
     <Wrapper>
-      <SEO pageTitle={'Portfolio Masonry'} />
+      <SEO pageTitle={'Work'} />
       <PortfolioMasonryMain work={work} />
     </Wrapper>
   )

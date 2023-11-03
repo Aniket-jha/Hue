@@ -6,7 +6,7 @@ import { client } from "../lib/client"
 const index = ({homeContent}) => {
   return (
     <Wrapper>
-      <SEO pageTitle={'Home Four'} />
+      <SEO pageTitle={'Home'} />
       <HomeFourMain homeContent={homeContent} />
     </Wrapper>
   );

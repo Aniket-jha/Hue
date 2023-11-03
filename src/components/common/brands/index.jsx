@@ -38,7 +38,7 @@ const Index = ({homeContent}) => {
         },
         // when window width is >= 768px
         768: {
-          slidesPerView: 1.8,
+          slidesPerView: 1,
         },
         // when window width is >= 576px
         576: {
@@ -49,7 +49,7 @@ const Index = ({homeContent}) => {
       {homeContent && homeContent?.brandList?.map((brand, i) => (
         <SwiperSlide key={i}>
           <div className="tp-brand-icon text-center">
-            <img style={{width:"230px"}} src={urlFor(brand)} alt="" />
+            <img style={{width:"200px"}} src={urlFor(brand)} alt="" />
           </div>
         </SwiperSlide>
       ))}

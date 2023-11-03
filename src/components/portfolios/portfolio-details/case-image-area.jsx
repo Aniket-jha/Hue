@@ -22,7 +22,7 @@ const CaseImageArea = ({case_item,workDetails}) => {
             workDetails?.workVideos?.map((imgItem,index)=>(
                 <div key={index} className="col-6">
               <div className="cd-banner-img">
-            <video style={{borderRadius:"20px"}} width="650" height="400" controls>
+            <video style={{borderRadius:"20px",width:"100%",height:"100%"}}  controls>
             <source src={imgItem.asset.url} type="video/mp4" />
 
       </video>

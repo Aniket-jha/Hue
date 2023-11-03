@@ -12,7 +12,7 @@ const PortfolioDynamicDetails = ({workDetails}) => {
   const case_item = portfolio_data.find(item => Number(item.id) === Number(id))
   return (
     <Wrapper>
-      <SEO pageTitle={'Portfolio Details'} />
+      <SEO pageTitle={workDetails?.workTitle} />
       <PortfolioDetailsMain workDetails={workDetails} case_item={case_item} />
     </Wrapper>
   );
